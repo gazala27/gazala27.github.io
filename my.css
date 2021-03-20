@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+.container {
+
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  background-color: white;
+  font-family: 'Baloo Paaji 2', cursive;
+}
+
+.container .card {
+  top: 50%;
+  background-color: #1b2027;
+  height: 37rem;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  color: rgb(233, 203, 218);
+}
+
+.container .card .card__name {
+  margin-top: 15px;
+  font-size: 2.5em;
+  font-weight: 100;
+ 
+}
+
+.container .card .card__image {
+  height: 150px;
+  width: 150px;
+  border-radius: 10%;
+  border: 5px solid #603a6d;
+  margin-top: 20px;
+  
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.95em;
+  left: 0.96em;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg,#f1d94d, #ff003c, #c648c8,#f1d94d);
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #ff003c;
+  background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+.grid-container {
+  grid-gap: 15px;
+  font-size: 1.2em;
+}
